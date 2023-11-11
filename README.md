@@ -1,28 +1,73 @@
-<h1 align="center">Hi 👋, I'm Muhammad Ken I.</h1>
-<h3 align="center">A Frontend (Semi-Backend) developer from Indonesia</h3>
-
-- 🔭 I’m currently working on [Syabab Studio](https://github.com/syabab-dev/pioneer)
-
-- 🌱 I’m currently learning **PHP Laravel**
-
-- 🤝 I’m looking for help with [Cyberhazen](https://github.com/izzulaverroes/cyberhazen)
-
-- 📫 How to reach me **izzulaverroes@gmail.com**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/muhammad ken izzulhaq" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="muhammad ken izzulhaq" height="30" width="40" /></a>
-<a href="https://fb.com/luzizul lezazel" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="luzizul lezazel" height="30" width="40" /></a>
-<a href="https://instagram.com/@l.luzz.z" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="@l.luzz.z" height="30" width="40" /></a>
+## Introduction
+<p align="center">
+<img src="https://readme-typing-svg.demolab.com/?lines=Developer%20of%20Syabab%20Studio;Contributed%20to%2065+%2B%20Project%20;227+%2B%20days%20of%20coding%20experience&font=Poppins%20Code&center=true&width=700&height=45&color=fff53a&vCenter=true&pause=1000&size=25" /></a>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> </p>
+<h3 align="center">Hey there, I'm <a href="https://github.com/izzulaverroes">Muhammad Ken I.</a></h3>
+<h5 align="center">Below are a few links you can visit and some stats to look at too</h5>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=izzulaverroes&show_icons=true&locale=en&layout=compact" alt="izzulaverroes" /></p>
+<p align="center">
+  <a href="https://instagram.com/l.luzz.z"><img alt="Instagram" title="Instagram" src="https://img.shields.io/badge/-Instagram-FF63E8?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+  <a href="https://www.facebook.com/profile.php?id=100074498322908"><img alt="Facebook" title="Facebook" src="https://img.shields.io/badge/-Facebook-0092D5?style=for-the-badge&logo=facebook&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/muhammad-ken-izzulhaq-4470b6290/"><img alt="Linkedin" title="Linkedin" src="https://img.shields.io/badge/-LinkedIn-0092D5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="mailto:izzulaverroes@gmail.com"><img alt="Gmail" title="Gmail" src="https://img.shields.io/badge/-Email-FF4747?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://github.com/izzulaverroes?tab=repositories&sort=stargazers">
+    <img alt="total stars" title="Total stars on GitHub" src="https://custom-icon-badges.demolab.com/github/stars/izzulaverroes?color=FBFF41&style=for-the-badge&labelColor=959532&logo=star"/></a>
+   <a href="https://github.com/izzulaverroes"><img alt="followers" title="Follow me on Github" src="https://img.shields.io/github/followers/izzulaverroes?color=236ad3&style=for-the-badge&logo=github&label=Followers"/></a>
+ </p>
+ 
+## Profile Views
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=izzulaverroes&show_icons=true&locale=en" alt="izzulaverroes" /></p>
-<!---
-izzulaverroes/izzulaverroes is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
+  <table>
+    <tr>
+      <!-- <th>Profile Views</th> -->
+      <th>Total Count</th>
+    </tr>
+    <tr>
+      <!-- <td>
+        <div align="center">
+          <a href="https://github.com/Thinkright20"><img src="https://github.com/Thinkright20.png" alt="@Thinkright20" width="52" /></a>
+          <br />
+          <a align="center" href="https://github.com/thinkright20"><b>Thinkright20</b></a>
+        </b>
+      </td> -->
+      <!-- Profile Views -->
+      <td>
+         <a href="https://github.com/izzulaverroes"> <img src="https://komarev.com/ghpvc/?username=izzulaverroes&style=for-the-badge&color=brightgreen"> </a>
+      </td>
+    </tr>
+  </table>
+
+## What I'm Doing
+
+- 🏫 Studying on Averroes Digital Islamic School
+- 🌱 Learning JS, PHP Laravel & more
+
+Support Me on KoFi:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/izzul)
+
+## Languages and Tools
+
+<p align="left"> <a href="https://github.com/izzulaverroes"><img src="https://skillicons.dev/icons?i=vscode,github,html,css,js,php,laravel"> </a> </p>
+
+## My Stats:
+<p align="center">
+<img height="200px" src="https://github-readme-stats.vercel.app/api?username=izzulaverroes&hide_border=true&show_icons=true&count_private=true&theme=gruvbox&bg_color=151515">
+</p>
+
+## Activity On GitHub
+
+<p align="center">
+  <a href="https://github.com/izzulaverroes">      
+<img title="stats" alt="streak" src="https://github-readme-streak-stats.herokuapp.com/?user=izzulaverroes&theme=dark&hide_border=true&stroke=f53b3b"/>
+</a> 
+</p>
+
+## Top Respositorys
+  <p align="center">
+     <a href="https://github.com/izzulaverroes/cyberhazen"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=cyberhazen&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false" alt="github-readme-streak-stats"></a>
+    <a href="https://github.com/izzulaverroes/ibnuabbas"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=ibnuabbas&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false" alt="github-readme-streak-stats"></a>
+   <a href="https://github.com/izzulaverroes/ave"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=ave&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false" alt="github-readme-streak-stats"></a>
+  </p>
