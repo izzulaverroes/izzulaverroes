@@ -1,6 +1,6 @@
 ## Introduction
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com/?lines=Developer%20of%20Syabab%20Studio;Contributed%20to%2065+%2B%20Project%20;227+%2B%20days%20of%20coding%20experience&font=Poppins%20Code&center=true&width=700&height=45&color=fff53a&vCenter=true&pause=1000&size=25" /></a>
+<img src="https://readme-typing-svg.demolab.com/?lines=Developer%20of%20Syabab%20Studio;Contributed%20to%2065+%2B%20Project%20;227+%2B%20days%20of%20coding%20experience&font=Poppins%20Code&center=true&width=700&height=45&color=61DAFB&vCenter=true&pause=1000&size=25" /></a>
 </p>
 
 <h3 align="center">Hey there, I'm <a href="https://github.com/izzulaverroes">Muhammad Ken I.</a></h3>
@@ -34,7 +34,7 @@
       </td> -->
       <!-- Profile Views -->
       <td>
-         <a href="https://github.com/izzulaverroes"> <img src="https://komarev.com/ghpvc/?username=izzulaverroes&style=for-the-badge&color=brightgreen"> </a>
+         <a href="https://github.com/izzulaverroes"> <img src="https://komarev.com/ghpvc/?username=izzulaverroes&style=for-the-badge&color=61DAFB"> </a>
       </td>
     </tr>
   </table>
@@ -54,20 +54,19 @@ Support Me on KoFi:
 
 ## My Stats:
 <p align="center">
-<img height="200px" src="https://github-readme-stats.vercel.app/api?username=izzulaverroes&hide_border=true&show_icons=true&count_private=true&theme=gruvbox&bg_color=151515">
-</p>
-
-## Activity On GitHub
-
-<p align="center">
+<img height="200px" src="https://github-readme-stats.vercel.app/api?username=izzulaverroes&hide_border=true&show_icons=true&count_private=true&theme=react&bg_color=151515">
   <a href="https://github.com/izzulaverroes">      
-<img title="stats" alt="streak" src="https://github-readme-streak-stats.herokuapp.com/?user=izzulaverroes&theme=dark&hide_border=true&stroke=f53b3b"/>
+<img title="stats" alt="streak" src="https://github-readme-streak-stats.herokuapp.com/?user=izzulaverroes&theme=react&bg_color=151515&hide_border=true"/>
 </a> 
 </p>
 
+
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=izzulaverroes&theme=onestar&no-frame=false&no-bg=true&margin-w=4)
+
 ## Top Respositorys
   <p align="center">
-     <a href="https://github.com/izzulaverroes/cyberhazen"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=cyberhazen&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false" alt="github-readme-streak-stats"></a>
-    <a href="https://github.com/izzulaverroes/ibnuabbas"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=ibnuabbas&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false" alt="github-readme-streak-stats"></a>
-   <a href="https://github.com/izzulaverroes/ave"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=ave&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false" alt="github-readme-streak-stats"></a>
+     <a href="https://github.com/izzulaverroes/cyberhazen"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=cyberhazen&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
+    <a href="https://github.com/izzulaverroes/ibnuabbas"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=ibnuabbas&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
+   <a href="https://github.com/izzulaverroes/ave"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=ave&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
   </p>
