@@ -13,6 +13,7 @@
     <meta property="og:image" content="/preview.jpg">
     <meta name="author" content="Denys Verholomchuk">
     <!-- <link rel="icon shortcut" href="favicon.a113c45d.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="index.1f573d31.css">
     <script type="module" src="index.3ca8d391.js"></script>
     <script type="module" src="playground.c9bd8be1.js"></script>
@@ -556,7 +557,8 @@
                             <h6 class="work__name">Tyne Partners</h6>
                             <p class="work__date">2024</p>
                         </div>
-                    </a> <a href="https://sanctions-finder.com/" target="_blank" class="work">
+                    </a>
+                    <div href="" class="work" id="hutao">
                         <div class="work-parallax_image"> <img src="2.3740fdfa.jpg" alt="images" class="work__image"
                                 data-speed="auto">
                             <div class="work_image_hover">
@@ -849,12 +851,30 @@
                                 <div class="work_image_hover-block"></div>
                                 <div class="work_image_hover-block"></div>
                             </div>
+                            <div class="verify_box">
+                                <form action="" class="verify">
+                                    <div class="pin_text mb-2">
+                                        <h2>Enter Pin</h2>
+                                        <p>To Access</p>
+                                    </div>
+                                    <div class="pin_box">
+                                        <input type="text" class="pin" name="" id="" maxlength="1"
+                                            oninput="moveToNext(this)" autofocus>
+                                        <input type="text" class="pin" name="" id="" maxlength="1"
+                                            oninput="moveToNext(this)">
+                                        <input type="text" class="pin" name="" id="" maxlength="1"
+                                            oninput="moveToNext(this)">
+                                        <input type="text" class="pin" name="" id="" maxlength="1"
+                                            oninput="validateOTP()">
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         <div class="work__description">
-                            <h6 class="work__name">Sanctions Finder</h6>
-                            <p class="work__date">2022</p>
+                            <h6 class="work__name" id="hutao-">Character Design</h6>
+                            <p class="work__date">2023</p>
                         </div>
-                    </a> <a href="https://expandingspace.io/" target="_blank" class="work">
+                    </div> <a href="https://expandingspace.io/" target="_blank" class="work">
                         <div class="work-parallax_image"> <img src="3.23f3732d.jpg" alt="images" class="work__image"
                                 data-speed="auto">
                             <div class="work_image_hover">
@@ -1454,7 +1474,8 @@
                             viewbox="0 0 120 120">
                             <path fill="#F9FDFE" fill-rule="evenodd" d="M64 0h-8v56H0v8h56v56h8V64h56v-8H64V0Z"
                                 clip-rule="evenodd"></path>
-                        </svg> </a> </div>
+                        </svg> </a>
+                </div>
             </section>
             <section class="links-section"> <a href="https://dribbble.com/verholomchuk" target="_blank"
                     class="link__href links__href_dribbble">Dribbble</a>
@@ -1701,6 +1722,7 @@
             </div>
         </footer>
     </div>
+    <script src="download.js"></script>
     <script type="module" src="index.448c596b.js"></script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-T9XXF7M3BT%22%3E"></script>
     <script>function a() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], a("js", new Date), a("config", "G-T9XXF7M3BT");</script>

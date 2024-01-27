@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .otp-input {
+            font-size: 16px;
+            padding: 10px;
+            width: 50px;
+            text-align: center;
+        }
+
+        #errorMessage,
+        #successMessage {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="otpForm">
+        <label for="otpInput">Enter OTP:</label>
+        <input class="otp-input" type="text" maxlength="1" oninput="moveToNext(this)" autofocus>
+        <input class="otp-input" type="text" maxlength="1" oninput="moveToNext(this)">
+        <input class="otp-input" type="text" maxlength="1" oninput="moveToNext(this)">
+        <input class="otp-input" type="text" maxlength="1" oninput="moveToNext(this)">
+        <div id="errorMessage"></div>
+        <div id="successMessage"></div>
+        <button onclick="validateOTP()">Submit</button>
+    </div>
+
+    <script>
+        const correctOTP = "2244";
+
+        function moveToNext(currentInput) {
+            const inputValue = currentInput.value;
+
+            if (inputValue.length === 1) {
+                const nextInput = currentInput.nextElementSibling;
+                if (nextInput) {
+                    nextInput.focus();
+                }
+            }
+        }
+
+        function validateOTP() {
+            const userOTP = Array.from(document.querySelectorAll('.otp-input')).map(input => input.value).join('');
+
+            if (userOTP === correctOTP) {
+                document.getElementById('errorMessage').innerHTML = '';
+                document.getElementById('successMessage').innerHTML = 'OTP is correct. Access granted!';
+            } else {
+                document.getElementById('errorMessage').innerHTML = 'Incorrect OTP. Please try again.';
+                document.getElementById('successMessage').innerHTML = '';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

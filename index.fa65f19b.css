@@ -1,10 +1,7 @@
 *,
 :after,
 :before {
-    box-sizing: border-box
-}
-
-html{
+    box-sizing: border-box;
     cursor: none;
 }
 
@@ -183,7 +180,7 @@ input[type=radio] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    mix-blend-mode: difference;
 }
 
 @media only screen and (width<=768px) {
@@ -2146,4 +2143,70 @@ body::-webkit-scrollbar {
     overflow: hidden
 }
 
-/*# sourceMappingURL=index.fa65f19b.css.map */
+.verify_box {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff2d;
+    /* filter: blur(5px); */
+    backdrop-filter: blur(4px);
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.verify {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background-color: #202020;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    flex-direction: column;
+}
+
+.pin_box {
+    display: flex;
+    gap: 5px;
+}
+
+.pin_text {
+    font-family: NeueHaasDisplay;
+    font-weight: 500;
+    color: #f9fdfe;
+    text-align: center;
+}
+
+.pin_text h2 {
+    text-transform: uppercase;
+    font-size: larger;
+}
+
+.pin_text p {
+    opacity: .5;
+}
+
+.pin {
+    width: 45px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 35px;
+    font-family: NeueHaasDisplay;
+    text-align: center;
+}
+
+.pin:focus {
+    outline-offset: -3px;
+    outline-color: #6d6d6d;
+    outline-style: solid;
+    outline-width: 2px;
+}
