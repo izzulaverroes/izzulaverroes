@@ -43,7 +43,25 @@
     </div>
 
     <script>
-        const correctOTP = "2244";
+        const correctOTPCodes = {
+            "2244": {
+                message: "OTP is correct. Access granted!",
+                action: () => {
+                    // Action for code "2244"
+                    console.log("Performing action for code 2244");
+                    // Add your custom action here
+                }
+            },
+            "1234": {
+                message: "OTP is correct. Access granted!",
+                action: () => {
+                    // Action for code "1234"
+                    console.log("Performing action for code 1234");
+                    // Add your custom action here
+                }
+            },
+            // Add more codes and actions as needed
+        };
 
         function moveToNext(currentInput) {
             const inputValue = currentInput.value;
@@ -59,9 +77,14 @@
         function validateOTP() {
             const userOTP = Array.from(document.querySelectorAll('.otp-input')).map(input => input.value).join('');
 
-            if (userOTP === correctOTP) {
+            // Check if the entered OTP matches any code in the object
+            if (correctOTPCodes[userOTP]) {
                 document.getElementById('errorMessage').innerHTML = '';
-                document.getElementById('successMessage').innerHTML = 'OTP is correct. Access granted!';
+                document.getElementById('successMessage').innerHTML = correctOTPCodes[userOTP].message;
+
+                // Perform the custom action associated with the code
+                correctOTPCodes[userOTP].action();
+
             } else {
                 document.getElementById('errorMessage').innerHTML = 'Incorrect OTP. Please try again.';
                 document.getElementById('successMessage').innerHTML = '';

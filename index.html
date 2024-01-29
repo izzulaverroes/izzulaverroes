@@ -53,10 +53,11 @@
         </div>
         <main class="main">
             <section class="main-section">
-                <header class="header"> <a href="index.html" class="header__name page-transition_link">ZulHaq</a> <time
-                        class="header__time">00:00 PM</time>
+                <header class="header"> <a href="index.html" class="header__name page-transition_link">ZulHaq</a>
+                    <time class="header_time" id="_clock">00:00 PM</time>
+                    <time class="header__time">00:00 PM</time>
                     <p class="header__text"> <span class="header__text-span">say hi </span> <a
-                            href="mailto:denverhovny@gmail.com" class="header__text-href">izzulaverroes@gmail.com</a>
+                            href="mailto:izzulaverroes@gmail.com" class="header__text-href">izzulaverroes@gmail.com</a>
                     </p>
                 </header>
                 <div class="main-section_first-content">
@@ -866,6 +867,12 @@
                                             oninput="moveToNext(this)">
                                         <input type="text" class="pin" name="" id="" maxlength="1"
                                             oninput="validateOTP()">
+                                    </div>
+                                    <div class="pin_text mt-2 ">
+                                        <h2 class="d-none" style="color: red;opacity: 1;font-weight: 600;"
+                                            id="incorrectPin">Access denied</h2>
+                                        <h2 class="d-none" style="color: rgb(0, 184, 0);opacity: 1;font-weight: 600;"
+                                            id="correctPin">Access granted</h2>
                                     </div>
                                 </form>
                             </div>
@@ -1713,7 +1720,7 @@
                 <div class="footer_links"> <a href="https://verholomchuk.com/about"
                         class="footer_link link3D links page-transition_link">
                         <div><span class="link3D_text links">About&nbsp;me</span></div>
-                    </a> <a href="https://verholomchuk.com/playground"
+                    </a> <a href="playground.html"
                         class="footer_link link3D links page-transition_link">
                         <div><span class="link3D_text links">Playground</span></div>
                     </a> </div> <a href="#form-link" class="following footer_button"><span
