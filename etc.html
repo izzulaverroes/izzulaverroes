@@ -23,8 +23,15 @@
         }
 
         #errorMessage,
-        #successMessage {
+        #successMessage,
+        #blockMessage {
             margin-top: 5px;
+        }
+
+        #countdown {
+            font-size: 16px;
+            color: red;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -33,35 +40,27 @@
 
     <div id="otpForm">
         <label for="otpInput">Enter OTP:</label>
-        <input class="otp-input" type="text" maxlength="1" oninput="moveToNext(this)" autofocus>
-        <input class="otp-input" type="text" maxlength="1" oninput="moveToNext(this)">
-        <input class="otp-input" type="text" maxlength="1" oninput="moveToNext(this)">
-        <input class="otp-input" type="text" maxlength="1" oninput="moveToNext(this)">
+        <input class="otp-input" type="text" maxlength="1" oninput="moveToNext(this)"
+            onkeydown="handleBackspace(event, this)" autofocus>
+        <input class="otp-input" type="text" maxlength="1" oninput="moveToNext(this)"
+            onkeydown="handleBackspace(event, this)">
+        <input class="otp-input" type="text" maxlength="1" oninput="moveToNext(this)"
+            onkeydown="handleBackspace(event, this)">
+        <input class="otp-input" type="text" maxlength="1" oninput="validateOTP()"
+            onkeydown="handleBackspace(event, this)">
         <div id="errorMessage"></div>
         <div id="successMessage"></div>
+        <div id="blockMessage"></div>
+        <div id="countdown"></div>
         <button onclick="validateOTP()">Submit</button>
     </div>
 
     <script>
-        const correctOTPCodes = {
-            "2244": {
-                message: "OTP is correct. Access granted!",
-                action: () => {
-                    // Action for code "2244"
-                    console.log("Performing action for code 2244");
-                    // Add your custom action here
-                }
-            },
-            "1234": {
-                message: "OTP is correct. Access granted!",
-                action: () => {
-                    // Action for code "1234"
-                    console.log("Performing action for code 1234");
-                    // Add your custom action here
-                }
-            },
-            // Add more codes and actions as needed
-        };
+        const correctOTP = "2244";
+        let incorrectAttempts = 0;
+        const maxAttempts = 5;
+        const blockDuration = 5 * 60 * 1000; // 5 minutes in milliseconds
+        let blockTimeout;
 
         function moveToNext(currentInput) {
             const inputValue = currentInput.value;
@@ -74,20 +73,87 @@
             }
         }
 
+        function handleBackspace(event, currentInput) {
+            const inputValue = currentInput.value;
+
+            if (event.key === "Backspace" && inputValue.length === 0) {
+                const prevInput = currentInput.previousElementSibling;
+                if (prevInput) {
+                    prevInput.focus();
+                }
+            }
+        }
+        // document.querySelectorAll('.otp-input').forEach(style.backgroundColor = '#999999')
+        document.querySelectorAll('.otp-input').forEach(input => input.style.backgroundColor = '#999999');
+
+
+        function clearOTPInputs() {
+            // Clear all OTP input fields
+            const otpInputs = document.querySelectorAll('.otp-input');
+            otpInputs.forEach(input => input.value = '');
+        }
+
+        function blockUser() {
+            document.getElementById('errorMessage').innerHTML = 'Too many incorrect attempts. Please try again later.';
+            document.getElementById('successMessage').innerHTML = '';
+            document.getElementById('otpForm').style.pointerEvents = 'none';
+
+            // Display block message
+            document.getElementById('blockMessage').innerHTML = 'You are blocked for 5 minutes.';
+            document.getElementById('countdown').innerHTML = '';
+
+            // Set a countdown timer for 5 minutes
+            let countdown = blockDuration / 1000;
+            updateCountdown();
+
+            blockTimeout = setTimeout(() => {
+                // Unblock the user after the specified duration
+                document.getElementById('otpForm').style.pointerEvents = 'auto';
+                document.getElementById('blockMessage').innerHTML = '';
+                clearTimeout(blockTimeout);
+            }, blockDuration);
+
+            function updateCountdown() {
+                if (countdown >= 0) {
+                    document.getElementById('countdown').innerHTML = `Try again in ${formatTime(countdown)}`;
+                    countdown--;
+                    setTimeout(updateCountdown, 1000);
+                }
+            }
+
+            function formatTime(seconds) {
+                const minutes = Math.floor(seconds / 60);
+                const remainingSeconds = seconds % 60;
+                return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+            }
+        }
+
         function validateOTP() {
+            if (blockTimeout) {
+                // User is blocked, do not proceed
+                return;
+            }
+
             const userOTP = Array.from(document.querySelectorAll('.otp-input')).map(input => input.value).join('');
 
-            // Check if the entered OTP matches any code in the object
-            if (correctOTPCodes[userOTP]) {
+            // Check if the entered OTP matches the correct code
+            if (userOTP === correctOTP) {
                 document.getElementById('errorMessage').innerHTML = '';
-                document.getElementById('successMessage').innerHTML = correctOTPCodes[userOTP].message;
-
-                // Perform the custom action associated with the code
-                correctOTPCodes[userOTP].action();
-
+                document.getElementById('successMessage').innerHTML = 'OTP is correct. Access granted!';
             } else {
-                document.getElementById('errorMessage').innerHTML = 'Incorrect OTP. Please try again.';
-                document.getElementById('successMessage').innerHTML = '';
+                // Increment incorrect attempts counter
+                incorrectAttempts++;
+
+                if (incorrectAttempts >= maxAttempts) {
+                    // Block the user if the maximum attempts are reached
+                    blockUser();
+                } else {
+                    document.getElementById('errorMessage').innerHTML = 'Incorrect OTP. Please try again.';
+                    document.getElementById('successMessage').innerHTML = '';
+
+                    // Clear OTP inputs on incorrect entry
+                    clearOTPInputs();
+                }
             }
         }
     </script>

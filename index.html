@@ -860,17 +860,17 @@
                                     </div>
                                     <div class="pin_box">
                                         <input type="text" class="pin" name="" id="" maxlength="1"
-                                            oninput="moveToNext(this)" autofocus>
+                                            oninput="moveToNext(this)" onkeydown="handleBackspace(event, this)"autofocus>
                                         <input type="text" class="pin" name="" id="" maxlength="1"
-                                            oninput="moveToNext(this)">
+                                            oninput="moveToNext(this)"onkeydown="handleBackspace(event, this)">
                                         <input type="text" class="pin" name="" id="" maxlength="1"
-                                            oninput="moveToNext(this)">
+                                            oninput="moveToNext(this)"onkeydown="handleBackspace(event, this)">
                                         <input type="text" class="pin" name="" id="" maxlength="1"
-                                            oninput="validateOTP()">
+                                            oninput="validateOTP()"onkeydown="handleBackspace(event, this)">
                                     </div>
                                     <div class="pin_text mt-2 ">
                                         <h2 class="d-none" style="color: red;opacity: 1;font-weight: 600;"
-                                            id="incorrectPin">Access denied</h2>
+                                            id="incorrectPin"></h2>
                                         <h2 class="d-none" style="color: rgb(0, 184, 0);opacity: 1;font-weight: 600;"
                                             id="correctPin">Access granted</h2>
                                     </div>
@@ -1731,8 +1731,6 @@
     </div>
     <script src="download.js"></script>
     <script type="module" src="index.448c596b.js"></script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-T9XXF7M3BT%22%3E"></script>
-    <script>function a() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], a("js", new Date), a("config", "G-T9XXF7M3BT");</script>
 </body>
 
 </html>

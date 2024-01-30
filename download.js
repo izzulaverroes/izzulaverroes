@@ -1,18 +1,22 @@
 const hutaoVerify = document.querySelector('#hutao-');
 const hutaoBox = document.querySelector('.verify_box')
+let OTPAttept = 5;
+let MaxOTPAttept = 5;
 
 function refresh() {
     window.location = window.location;
 }
 function clearOTPInputs() {
-    // Clear all OTP input fields
     const otpInputs = document.querySelectorAll('.pin');
     otpInputs.forEach(input => input.value = '');
 }
 
 hutaoVerify.addEventListener('click', () => {
     hutaoBox.classList.toggle('d-flex');
-    document.querySelector('.pin').focus();
+    if (OTPAttept > 0) {
+        document.querySelector('.pin').focus();
+
+    }
 })
 
 document.addEventListener('click', function (e) {
@@ -21,25 +25,20 @@ document.addEventListener('click', function (e) {
         clearOTPInputs();
     }
 })
-
 const correctOTPCodes = {
     "1507": {
         message: "OTP is correct. Access granted!",
         action: () => {
-            // Action for code "2244"
             window.location.href = "videos/hutao.mp4";
-            // Add your custom action here
         }
     },
     "1234": {
         message: "OTP is correct. Access granted!",
         action: () => {
-            // Action for code "1234"
             window.location.href = "videos/keqing.mp4";
-            // Add your custom action here
         }
     },
-    // Add more codes and actions as needed
+
 };
 
 function moveToNext(currentInput) {
@@ -52,17 +51,21 @@ function moveToNext(currentInput) {
         }
     };
 }
+function handleBackspace(event, currentInput) {
+    const inputValue = currentInput.value;
 
-// function validateOTP() {
-//     const userOTP = Array.from(document.querySelectorAll('.pin')).map(input => input.value).join('');
+    if (event.key === "Backspace" && inputValue.length === 0) {
+        const prevInput = currentInput.previousElementSibling;
+        if (prevInput) {
+            prevInput.focus();
+        }
+    }
+}
+function blockUser() {
+    document.querySelector('.pin_box').style.pointerEvents = 'none';
+    document.querySelectorAll('.pin').forEach(input => input.style.backgroundColor = '#999999');
 
-//     if (userOTP === correctOTP) {
-//         window.location.href = "videos/hutao.mp4";
-//         setTimeout(refresh, 5000)
-//     } else {
-//         console.log("Noo")
-//     }
-// }
+}
 
 function validateOTP() {
     const userOTP = Array.from(document.querySelectorAll('.pin')).map(input => input.value).join('');
@@ -70,14 +73,28 @@ function validateOTP() {
     // Check if the entered OTP matches any code in the object
     if (correctOTPCodes[userOTP]) {
         // Perform the custom action associated with the code
-        correctOTPCodes[userOTP].action();
-        document.querySelector('#incorrectPin').classList.add('d-none')
-        document.querySelector('#correctPin').classList.remove('d-none')
-        setTimeout(refresh, 4000)
+        if (OTPAttept > 0) {
+            correctOTPCodes[userOTP].action();
+            document.querySelector('#incorrectPin').classList.add('d-none')
+            document.querySelector('#correctPin').classList.remove('d-none')
+            setTimeout(refresh, 6000)
+        }
     } else {
-        clearOTPInputs();
-        document.querySelector('.pin').focus();
-        document.querySelector('#incorrectPin').classList.remove('d-none')
+        OTPAttept--;
+        if (OTPAttept <= 0) {
+            blockUser();
+        } else {
+            clearOTPInputs();
+            document.querySelector('.pin').focus();
+            document.querySelector('#incorrectPin').classList.remove('d-none')
+            if (OTPAttept > 1) {
+                document.querySelector('#incorrectPin').innerHTML = `Access denied ${OTPAttept - 1} More`;
+
+            } else if (OTPAttept = 1) {
+
+                document.querySelector('#incorrectPin').innerHTML = `Last Try`;
+            };
+        }
     }
 }
 
