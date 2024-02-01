@@ -2,10 +2,11 @@ const hutaoVerify = document.querySelector('#hutao-');
 const hutaoBox = document.querySelector('.verify_box')
 let OTPAttept = 5;
 let MaxOTPAttept = 5;
-
+// Refresh function
 function refresh() {
     window.location = window.location;
 }
+// Clear OTP Input function
 function clearOTPInputs() {
     const otpInputs = document.querySelectorAll('.pin');
     otpInputs.forEach(input => input.value = '');
@@ -15,7 +16,6 @@ hutaoVerify.addEventListener('click', () => {
     hutaoBox.classList.toggle('d-flex');
     if (OTPAttept > 0) {
         document.querySelector('.pin').focus();
-
     }
 })
 
@@ -27,16 +27,44 @@ document.addEventListener('click', function (e) {
 })
 const correctOTPCodes = {
     "1507": {
-        message: "OTP is correct. Access granted!",
-        action: () => {
-            window.location.href = "videos/hutao.mp4";
-        }
+        title:'hutao',
+        action: 'https://drive.usercontent.google.com/u/2/uc?id=1ke3jttZXp8pL4NSXUB34lVBKEUQyaEk9&export=download&authuser=0'
     },
-    "1234": {
-        message: "OTP is correct. Access granted!",
-        action: () => {
-            window.location.href = "videos/keqing.mp4";
-        }
+    "0220": {
+        title:'ganyuKeqing',
+        action: 'https://drive.usercontent.google.com/u/0/uc?id=1qqBha41S3JVnMfHmTjraJLRoExIRQ3BO&export=download&authuser=0'
+    },
+    "tao2": {
+        title:'hutao2',
+        action: 'https://drive.usercontent.google.com/u/2/uc?id=1_eCrBW1VtWFGjYZt94B4hUOqI0epyGjf&export=download&authuser=0'
+    },
+    "3108": {
+        title:'mona',
+        action: 'https://drive.usercontent.google.com/u/2/uc?id=1wZvv3Q1XaUuOCvNXUOM0HlQ_NsyRZs3q&export=download&authuser=0'
+    },
+    "2705": {
+        title:'fischl',
+        action: 'https://drive.usercontent.google.com/download?id=15KmtOS_ygYdd-sQf4hEIrzvFl_ywFgDf&export=download&authuser=0'
+    },
+    "2510": {
+        title:'eula',
+        action: 'https://drive.usercontent.google.com/u/2/uc?id=1g7w7aOdj0vxwXD2eu7V42NlPJJXMXqIG&export=download&authuser=0'
+    },
+    "2106": {
+        title:'yoimiya',
+        action: 'https://drive.usercontent.google.com/download?id=1kFoYDAOBmeNn58zzmRxFrW9Q9HB31tYH&export=download&authuser=0'
+    },
+    "2627": {
+        title:'raidenYae',
+        action: 'https://drive.usercontent.google.com/u/2/uc?id=1RAyFBSD6k_jpg724sD6WkQHLutC88l1-&export=download&authuser=0'
+    },
+    "mc01": {
+        title:'monaAether',
+        action: 'https://drive.usercontent.google.com/u/2/uc?id=1ycxevdKz3Yd-AUo9Cz2iCUgibZ6jf8ft&export=download&authuser=0'
+    },
+    "2011": {
+        title:'keqing',
+        action: 'https://drive.usercontent.google.com/u/2/uc?id=1x005a_N9l7ErYT6LXcLOumUHofBslXRJ&export=download&authuser=0'
     },
 
 };
@@ -74,25 +102,31 @@ function validateOTP() {
     if (correctOTPCodes[userOTP]) {
         // Perform the custom action associated with the code
         if (OTPAttept > 0) {
-            correctOTPCodes[userOTP].action();
-            document.querySelector('#incorrectPin').classList.add('d-none')
-            document.querySelector('#correctPin').classList.remove('d-none')
-            setTimeout(refresh, 6000)
+            // correctOTPCodes[userOTP].action();
+            window.location.href = correctOTPCodes[userOTP].action;
+            document.querySelector('#pinOutput').innerHTML = `<h2 style="color:#00a600;opacity: 1;font-weight: 600;">Access Granted</h2>`;
+            // setTimeout(refresh, 10000)
+            clearOTPInputs();
+            document.querySelector('.pin').focus();
+            OTPAttept = 5;
         }
     } else {
         OTPAttept--;
+        console.log(OTPAttept)
         if (OTPAttept <= 0) {
             blockUser();
         } else {
             clearOTPInputs();
             document.querySelector('.pin').focus();
-            document.querySelector('#incorrectPin').classList.remove('d-none')
             if (OTPAttept > 1) {
-                document.querySelector('#incorrectPin').innerHTML = `Access denied ${OTPAttept - 1} More`;
+                document.querySelector('#pinOutput').innerHTML = `<h2 style="color:red;opacity: 1;font-weight: 600;"> Access denied ${OTPAttept - 1} More</h2>`;
 
             } else if (OTPAttept = 1) {
 
-                document.querySelector('#incorrectPin').innerHTML = `Last Try`;
+                document.querySelector('#pinOutput').innerHTML = `<h2 style="color:red;opacity: 1;font-weight: 600;"> Last Try</h2>`;
+            }else{
+                
+                document.querySelector('#pinOutput').innerHTML = `<h2 style="color:red;opacity: 1;font-weight: 600;">Try again later !</h2> `;
             };
         }
     }
