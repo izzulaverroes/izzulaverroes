@@ -32,9 +32,9 @@ Support me on KoFi:
 
 ## My stats:
 <p align="center">
-<img height="200px" src="https://github-readme-stats.vercel.app/api?username=izzulaverroes&hide_border=true&show_icons=true&count_private=true&theme=react&bg_color=151515&">
+<img height="200px" width="40%" src="https://github-readme-stats.vercel.app/api?username=izzulaverroes&hide_border=true&show_icons=true&count_private=true&theme=react&bg_color=151515&">
   <a href="https://github.com/izzulaverroes">      
-<img title="stats" alt="streak" src="https://github-readme-streak-stats.herokuapp.com/?user=izzulaverroes&theme=react&bg_color=151515&hide_border=true"/>
+<img height="200px" width="40%" title="stats" alt="streak" src="https://github-readme-streak-stats.herokuapp.com/?user=izzulaverroes&theme=react&bg_color=151515&hide_border=true"/>
 </a> 
 </p>
 
@@ -44,18 +44,19 @@ Support me on KoFi:
 
 ## Top respositorys
   <p align="center">
-     <a href="https://izzulaverroes.github.io/izzulaverroes/portfolio"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=portfolio&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
-    <a href="https://github.com/izzulaverroes/cyberhazen"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=cyberhazen&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
-   <a href="https://github.com/izzulaverroes/ave"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=ave&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
+     <a href="https://izzulaverroes.github.io/izzulaverroes/portfolio"><img width="33%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=portfolio&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
+    <a href="https://github.com/izzulaverroes/cyberhazen"><img width="33%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=cyberhazen&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
+   <a href="https://github.com/izzulaverroes/ave"><img width="33%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=ave&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
   </p>
 
 
 ## Real projects
   <p align="center">
-     <a href="https://github.com/izzulaverroes/pioneer"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=syabab-dev&repo=pioneer&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
-    <a href="https://github.com/izzulaverroes/xbank"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=xbank&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
+     <a href="https://github.com/izzulaverroes/pioneer"><img width="40%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=syabab-dev&repo=pioneer&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
+    <a href="https://github.com/izzulaverroes/xbank"><img width="40%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=xbank&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
   </p>
 
 ## Some jokes before end
 <a href="https://readme-jokes.vercel.app" style="text-align:center"><img align="center" src="https://readme-jokes.vercel.app/api" alt="README Jokes"></a>
 
+<h1> what's the most beautiful? </h1>
